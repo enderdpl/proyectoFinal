@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>OnClick - Solución a tu alcance</title>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
+  <style>
+    /* Estilos personalizados */
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #f8f9fa;
+    }
+
+    h1 {
+      font-size: 2.5rem;
+      color: #343a40;
+      text-align: center;
+      margin-top: 2rem;
+    }
+
+    .btn-lg {
+      font-size: 1.5rem;
+      margin-top: 1rem;
+      margin-bottom: 1rem;
+    }
+
+    .btn-login {
+      background-color: #007bff;
+      border-color: #007bff;
+    }
+
+    .btn-login:hover {
+      background-color: #0069d9;
+      border-color: #0062cc;
+    }
+
+    .btn-register {
+      background-color: #28a745;
+      border-color: #28a745;
+    }
+
+    .btn-register:hover {
+      background-color: #218838;
+      border-color: #1e7e34;
+    }
+
+    .main-content {
+      margin-top: 3rem;
+    }
+
+    .card {
+      border: none;
+      box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15);
+    }
+
+    .card-img-top {
+      height: 250px;
+      object-fit: cover;
+    }
+
+    .card-text {
+      margin-top: 1rem;
+      margin-bottom: 1rem;
+    }
+  </style>
+</head>
+<body>
+  <!-- Barra de navegación -->
+  <nav class="navbar navbar-expand-md navbar-dark bg-dark">
+    <a class="navbar-brand" href="#">OnClick</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav ml-auto">
+        <li class="nav-item active">
+          <a class="nav-link" href="/dashboard">Inicio</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Servicios</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Contacto</a>
+        </li>
+        <li class="nav-item">
+          <a href="/login"><button class="btn btn-outline-light btn-lg" type="submit">Iniciar sesión</button></a>
+        </li>
+        <li class="nav-item">
+          <a href="/register"><button class="btn btn-outline-light btn-lg" type="submit">Registrarse</button></a>
+        </li>
+      </ul>
+    </div>
+  </nav>
+
+  <div class="container main-content">
+    <!-- Encabezado -->
+    <div class="row justify-content-center">
+      <div class="col-md-8">
+        <h1>Reparación de equipos electrónicos</h1>
+        <p class="lead">En OnClick te ofrecemos un servicio
