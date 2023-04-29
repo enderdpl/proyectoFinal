@@ -4,7 +4,8 @@ const cookieParser = require('cookie-parser')
 var methodOverride = require('method-override')
 const morgan=require('morgan')
 const app= express();
-app.use(methodOverride("_method", { methods: ["GET", "POST"] }));
+
+app.use(methodOverride("_method",{methods: ["GET","POST"]}))
 
 app.use(morgan('dev'))
 //seteamos el motor de plantilla

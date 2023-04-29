@@ -6,8 +6,27 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>graficos</title>
     <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.3/jquery.min.js"
+    integrity="sha512-STof4xm1wgkfm7heWqFJVn58Hm3EtS31XFaagaa8VMReCXAkQnJZ+jEy8PCC/iT18dFy95WcExNHFTqLyp72eQ=="
+    crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jQuery.print/1.6.2/jQuery.print.min.js"
+    integrity="sha512-t3XNbzH2GEXeT9juLjifw/5ejswnjWWMMDxsdCg4+MmvrM+MwqGhxlWeFJ53xN/SBHPDnW0gXYvBx/afZZfGMQ=="
+    crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
 </head>
 <body>
+
+
+
+
+<div id="slides" class="container nuevo" ></div>
+  <!-- <button href="javascript:void(0)" id="imprime" class="but">Imprime<button> -->
+  <div> <button class="btn btn-success" style="vertical-align:middle" href="javascript:void(0)"  id="imprime"><span>Descargar</span></button></div>
+
     <canvas id="myChart" width="auto" height="auto"></canvas>
       <script>
         function getRandomColor() {
@@ -49,6 +68,15 @@
           }
         }
       });
+
+      $(document).ready(() => {
+    $("#imprime").click(function () {
+        $.print("#myChart")
+    }
+
+    )
+}
+)
     </script>
 </body>
 </html>

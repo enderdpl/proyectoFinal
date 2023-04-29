@@ -10,13 +10,14 @@ const authController = require('../controllers/authController')
 router.get('/dashboard', (req,res)=>{
     res.render('dashboard.ejs')
 })
+// rutas de graficos con groupby
 router.get('/graficos',authController.isAuthenticated, async(req,res)=>{
 
     const resultado = await fetch(`http://localhost:5007/api/v1/graficos/productos`);
 
     const data = await resultado.json();
 
-    res.render('graficos.ejs', {results:data}) 
+    res.render('graficos.ejs', {results:data})  
 })
 // VERIFICA TOKEN PARA AUTORIZACION AL INGRESAR
 router.get('/',authController.isAuthenticated,async (req,res)=>{
